@@ -3,7 +3,7 @@ function App() {
   //컴포넌트에 props 값을 세팅
   return (
     <div>
-      <Dice color="red" num={2} />
+      <Dice color="blue" num={3} />
     </div>
   );
 }
