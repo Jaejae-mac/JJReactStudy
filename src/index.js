@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-
+import App from './App';
 //render 화면을 그리는 메소드로 html 태그를 만들어주는 역할을 한다.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //직접 태그를 넣어주는 것을 볼 수 있는데,
@@ -40,16 +40,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
  * JSX 문법에서는 {} 안에 자바스크립트 표현식을 사용할 수 있고
  * {} 안에서는 자바스크립트 표현식만 사용할 수 있으며 if문 for문등과같은 것들은 사용할 수 없다.
  */
-function Hello() {
-  //리액트 컴포넌트라고 부름
-  //console 에 Hello() 를 출력해보면
-  //<h1>태그를 리턴해주는 해당함수는 console에 Js 객체로 출력된다.
-  return <h1>안녕 리액트</h1>;
-}
-root.render(
-  <>
-    <Hello />
-    <Hello />
-    <Hello />
-  </>
-);
+
+root.render(<App />);
