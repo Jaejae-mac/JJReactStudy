@@ -36,12 +36,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
  * 일반적인 js는 js 파일로 만들어주면된다.
  *  */
 
+/**
+ * JSX 문법에서는 {} 안에 자바스크립트 표현식을 사용할 수 있고
+ * {} 안에서는 자바스크립트 표현식만 사용할 수 있으며 if문 for문등과같은 것들은 사용할 수 없다.
+ */
+const product = 'MacBook';
+const model = 'Air';
+const item = product + model;
+function handleClick() {
+  alert('곧 도착합니다!');
+}
 root.render(
   <>
-    <p id="hello">index.html이 열리고 가장먼저 실행되는 리액트 파일</p>
-    <form>
-      <label htmlFor="name">이름</label>
-      <input id="name" type="text" onBlur="" onFocus="" onMoustDown="" />
-    </form>
+    <h1>나만의 {item} 주문하기</h1>
+    <button onClick={handleClick}>확인</button>
   </>
 );
