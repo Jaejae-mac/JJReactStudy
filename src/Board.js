@@ -1,6 +1,8 @@
 import Dice from './Dice';
 
-function Board({ name, color, gameHistory, num, sum }) {
+function Board({ name, color, gameHistory }) {
+  const num = gameHistory[gameHistory.length - 1] || 1;
+  const sum = gameHistory.reduce((a, b) => a + b, 0);
   //컴포넌트에 props 값을 세팅
   return (
     <div>
