@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './index.css';
 //render 화면을 그리는 메소드로 html 태그를 만들어주는 역할을 한다.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //직접 태그를 넣어주는 것을 볼 수 있는데,

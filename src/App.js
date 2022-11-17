@@ -24,8 +24,12 @@ function App() {
   return (
     <div>
       <div>
-        <Button onClick={handleRollClick}>던지기</Button>
-        <Button onClick={handleClearClick}>처음부터</Button>
+        <Button onClick={handleRollClick} color="blue">
+          던지기
+        </Button>
+        <Button onClick={handleClearClick} color="red">
+          처음부터
+        </Button>
       </div>
       <div>
         <Board name="나" color="blue" gameHistory={myHistory} />
